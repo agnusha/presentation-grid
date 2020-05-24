@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="custom/styles/style.css">
+
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<section data-background-image="custom\img\grid.jpg">
+					<div class="color-block">
+						<h1>CSS Grid Layout</h1>
+						<br>
+						<h3>Starojtova Agnia</h3>
+						<br>
+					</div>
+					<br>
+					<br>
+
+					<div class="color-block title-first-slide color">
+						<ul>
+							<li>Github: agnusha</li>
+							<li>Telegram: agnusha</li>
+							<li>E-mail: agnia2000@inbox.ru</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					CSS Grid Layout is the most powerful layout system available in CSS.
+					<br>
+					<br>
+					<ul class="font-smaller">
+						<li>2-dimensional system</li>
+						<li>work by applying CSS rules both to a parent element and to that element’s children</li>
+					</ul>
+					<br>
+					<br>
+					<div class="flex flex-space-around w-120">
+						<div>
+							<img class="slide-1-2-img" src="custom/img/gridFlexbox.jpg">
+						</div>
+						<div>
+							<img class="slide-1-2-img" src="custom/img/parentChild.jpg">
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h2>Layout problems</h2>
+				<p>
+					<div class="flex flex-direction-column custom-height">
+						<div class="flex flex-space-around">
+							<div class="layout-problems flex flex-center color-block">Tables</div>
+							<div class="layout-problems flex flex-center color-block">Floats</div>
+							<div class="layout-problems flex flex-center color-block">Positioning</div>
+						</div>
+
+						<div class="flex flex-space-around">
+							<div class="layout-problems flex flex-center color-block">Inline-block</div>
+							<div class="layout-problems flex flex-center color-block">Flexbox</div>
+							<div class="layout-problems flex flex-center color-block">Grid</div>
+						</div>
+					</div>
+				</p>
+				<p class="fragment fade-in">Grid is the very first CSS module created specifically to solve the layout
+					problems we’ve all been hacking our way around for as long as we’ve been making websites.
+				</p>
+			</section>
+
+			<section>
+
+				<section>
+					<h1>Terminology</h1>
+
+				</section>
+				<section>
+					<h2>Grid Container</h2>
+					<pre><code><div class="container">
+						   <div class="item item-1"> </div>
+						   <div class="item item-2"> </div>
+						   <div class="item item-3"> </div>
+						</div>
+				    </code></pre>
+
+				</section>
+				<section>
+					<h2>Grid Item</h2>
+					<pre><code><div class="container">
+						<div class="item"> </div>
+						<div class="item">
+						  <p class="sub-item"> </p>
+						</div>
+						<div class="item"> </div>
+					  </div>
+					</code></pre>
+				</section>
+				<section>
+					<h2>Grid Line</h2>
+					<img src="custom/img/line.svg" class="img-vocabulary" alt="line">
+				</section>
+				<section>
+					<h2>Grid Cell</h2>
+					<img src="custom/img/cell.svg" class="img-vocabulary" alt="cell">
+				</section>
+				<section>
+					<h2>Grid Track</h2>
+					<img src="custom/img/track.svg" class="img-vocabulary" alt="track">
+				</section>
+				<section>
+					<h2>Grid Area</h2>
+					<img src="custom/img/area.svg" class="img-vocabulary" alt="area">
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Grid Container</h2>
+					<br>
+					<div class="flex flex-space-around w-120">
+						<div>
+							display: grid
+							<img src="custom/img/grid.png" class="img-vocabulary" alt="track">
+						</div>
+						<div>
+							display: inline-grid
+							<img src="custom/img/inline-grid.png" class="img-vocabulary" alt="track">
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Explicit Grid</h2>
+					<br>
+					<div class="flex flex-space-around w-120">
+						<div>
+							grid-template-rows: 50px 100px
+							<img src="custom/img/grid-ex1.png" class="img-vocabulary" alt="Explicit Grid 1">
+						</div>
+						<div>
+							grid-template-columns: 1fr 1fr 2fr
+							<img src="custom/img/fr.png" class="img-vocabulary" alt="Explicit Grid 2">
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<h2>Minimum and Maximum Track Sizes</h2>
+				<p>
+					grid-template-rows: minmax(100px, auto); <br>
+					grid-template-columns: minmax(auto, 50%) 1fr 3em;
+				</p>
+				<div class="img-single-container">
+					<img src="custom/img/minmax.png" alt="minmax">
+				</div>
+			</section>
+			<section>
+				<h2>Repeating Grid Tracks</h2>
+				<p>
+					grid-template-rows: repeat(4, 100px); <br>
+					grid-template-columns: repeat(3, 1fr);
+				</p>
+				<div class="img-single-container">
+					<img src="custom/img/repeat.png" alt="repeat">
+				</div>
+			</section>
+			<section>
+				<section>
+					<h2>Grid Gaps (Gutters)</h2>
+					<h4>The grid-column-gap and grid-row-gap properties create gutters between columns and rows.</h4>
+					<br>
+					<div class="flex flex-space-around w-120">
+						<div>
+							grid-row-gap: 20px;<br>
+							grid-column-gap: 5rem;
+							<img src="custom/img/gap1.png" alt="Gap">
+						</div>
+						<div>
+							grid-gap: 100px 1em<br><br>
+							<img src="custom/img/gap2.png" alt="Gap">
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Aligning Grid Items (Box Alignment)</h2>
+					<br>
+					<h3>justify-items and align-items</h3>
+					<div class="flex flex-direction-column">
+						<div class="flex w-110 flex-space-around">
+							<div class="layout-problems flex flex-center color-block">auto</div>
+							<div class="layout-problems flex flex-center color-block">start</div>
+							<div class="layout-problems flex flex-center color-block">end</div>
+							<div class="layout-problems flex flex-center color-block">center</div>
+						</div>
+						<br>
+						<div class="flex w-110 flex-space-around">
+							<div class="layout-problems flex flex-center color-block">stretch</div>
+							<div class="layout-problems flex flex-center color-block">baseline</div>
+							<div class="layout-problems flex flex-center color-block">first baseline</div>
+							<div class="layout-problems flex flex-center color-block">last baseline</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="img-single-container">
+						<img src="custom/img/align.png" alt="align">
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Example</h2>
+					<div class="img-single-container">
+						<pre><code><div class="wrapper">
+						<div class="box a">A</div>
+						<div class="box b">B</div>
+						<div class="box c">C</div>
+						<div class="box d">D</div>
+					  </div>
+					</code></pre>
+						<img src="custom/img/example.png" alt="example">
+				</section>
+				<section>
+					<img src="custom/img/code.png" alt="code">
+				</section>
+			</section>
+			<section>
+				<h2>Browser support</h2>
+				<div>
+					<img src="custom/img/browser.png">
+				</div>
+				<p class="fragment fade-in">The time to build with grid is now!
+				</p>
+			</section>
+
+		</div>
+	</div>
+
+	<script src=" dist/reveal.js"> </script>
+	<script src="plugin/notes/notes.js">
+	</script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
