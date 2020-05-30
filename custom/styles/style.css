@@ -2,9 +2,34 @@
     display: flex;
 }
 
+ul {
+    list-style: square !important;
+}
+
+.header-text {}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.handle {
+    position: relative;
+    top: -40px;
+    left: 30px;
+}
+
+.reveal ul li img {
+    margin: 10px 0;
+}
+
 .w-110 {
     width: 110%;
 }
+
+img {
+    height: auto !important;
+}
+
 
 .img-vocabulary {
     width: 90%;
@@ -26,19 +51,36 @@ code {
     white-space: pre-line;
 }
 
+.flex-space-between {
+    justify-content: space-between;
+
+}
+
 .flex-space-around {
     justify-content: space-around;
 }
 
 .flex-direction-column {
     flex-direction: column;
-    height: 400px;
+    height: 350px;
     justify-content: space-between;
 }
 
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.custom-hr {
+    width: 70%;
+    border: none;
+    color: rgb(51, 9, 9);
+    background-color: rgb(51, 9, 9);
+    height: 2px;
 }
 
 .w-120 {
@@ -53,10 +95,22 @@ code {
     height: 250px;
 }
 
+.color-block-custom {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border-radius: 8px;
+    box-shadow: 40px rgba(0, 0, 0, 0.5);
+}
+
+.color-block-custom-second {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    border-radius: 8px;
+    box-shadow: 40px rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
+}
+
 .color-block {
-    background-image: linear-gradient(to top, rgb(67, 83, 252), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200));
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     border-radius: 5px;
-    border: 2px solid rgb(4, 29, 99);
     box-shadow: 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -64,14 +118,16 @@ code {
     font-size: 24px;
     margin-left: auto;
     width: 500px;
-    background-image: linear-gradient(to bottom, rgb(67, 83, 252), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200));
 }
 
 .layout-problems {
-
     height: 150px;
     width: 250px;
-    background-image: linear-gradient(to bottom, rgb(67, 83, 252), rgb(111, 114, 247), rgb(120, 114, 239), rgb(130, 113, 231), rgb(139, 112, 223), rgb(149, 111, 215), rgb(158, 111, 208), rgb(168, 110, 200));
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+}
+
+.layout-problems-custom {
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
 }
 
 

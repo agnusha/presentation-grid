@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="custom/styles/style.css">
 
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -25,27 +27,39 @@
 		<div class="slides">
 
 			<section>
-				<section data-background-image="custom\img\grid.jpg">
-					<div class="color-block">
-						<h1>CSS Grid Layout</h1>
+				<section>
+					<div class="color-block-custom">
 						<br>
-						<h3>Starojtova Agnia</h3>
+						<h2 class='cursive'>CSS Grid Layout</h2>
+						<hr size='5' class="custom-hr">
+						<h3>Starovojtova Agnia</h3>
 						<br>
 					</div>
-					<br>
 					<br>
 
-					<div class="color-block title-first-slide color">
-						<ul>
-							<li>Github: agnusha</li>
-							<li>Telegram: agnusha</li>
-							<li>E-mail: agnia2000@inbox.ru</li>
-						</ul>
+					<div class="flex flex-space-between">
+						<div>
+							<img class="no-margin handle" width="220" src="custom/img/giphy.gif">
+						</div>
+						<div>
+							<div class="color-block-custom-second title-first-slide color">
+								<ul>
+									<li><img class="" width="20" src="custom/img/github-image.png"> Github: agnusha
+									</li>
+									<li><img class="" width="20" src="custom/img/telegram.png"> Telegram: agnusha </li>
+									<li><img class="" width="20" src="custom/img/email.png"> E-mail: agnia2000@inbox.ru
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
+
+
+
 				</section>
 				<section>
-					CSS Grid Layout is the most powerful layout system available in CSS.
-					<br>
+					<div class="cursive color-block">CSS Grid Layout is the most powerful layout system available in
+						CSS.</div>
 					<br>
 					<ul class="font-smaller">
 						<li>2-dimensional system</li>
@@ -53,12 +67,12 @@
 					</ul>
 					<br>
 					<br>
-					<div class="flex flex-space-around w-120">
+					<div class="flex flex-space-around">
 						<div>
-							<img class="slide-1-2-img" src="custom/img/gridFlexbox.jpg">
+							<img class="slide-1-2-img" width="350" src="custom/img/gridFlexbox.jpg">
 						</div>
 						<div>
-							<img class="slide-1-2-img" src="custom/img/parentChild.jpg">
+							<img class="slide-1-2-img" width="550" src="custom/img/parentChild.jpg">
 						</div>
 					</div>
 				</section>
@@ -68,15 +82,19 @@
 				<p>
 					<div class="flex flex-direction-column custom-height">
 						<div class="flex flex-space-around">
-							<div class="layout-problems flex flex-center color-block">Tables</div>
-							<div class="layout-problems flex flex-center color-block">Floats</div>
-							<div class="layout-problems flex flex-center color-block">Positioning</div>
+							<div class="layout-problems flex fragment fade-in flex-center color-block">Tables</div>
+							<div class="layout-problems flex fragment fade-in flex-center color-block">Floats</div>
+							<div class="layout-problems flex fragment fade-in flex-center color-block">Positioning</div>
 						</div>
 
 						<div class="flex flex-space-around">
-							<div class="layout-problems flex flex-center color-block">Inline-block</div>
-							<div class="layout-problems flex flex-center color-block">Flexbox</div>
-							<div class="layout-problems flex flex-center color-block">Grid</div>
+							<div class="layout-problems flex fragment fade-in  flex-center color-block">Inline-block
+							</div>
+							<div class="layout-problems flex fragment fade-in flex-center color-block">Flexbox</div>
+							<div
+								class="layout-problems  fragment fade-in  layout-problems-custom flex flex-center color-block">
+								Grid
+							</div>
 						</div>
 					</div>
 				</p>
@@ -232,13 +250,14 @@
 				<section>
 					<h2>Example</h2>
 					<div class="img-single-container">
-						<pre><code><div class="wrapper">
-						<div class="box a">A</div>
-						<div class="box b">B</div>
-						<div class="box c">C</div>
-						<div class="box d">D</div>
-					  </div>
-					</code></pre>
+						<pre><code>
+<div class="wrapper">
+	<div class="box a">A</div>
+	<div class="box b">B</div>
+	<div class="box c">C</div>
+	<div class="box d">D</div>
+</div>
+</code></pre>
 						<img src="custom/img/example.png" alt="example">
 				</section>
 				<section>
