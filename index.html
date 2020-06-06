@@ -18,7 +18,6 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="dist/theme/beige.css" id="theme">
 
-	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 </head>
 
@@ -54,8 +53,6 @@
 						</div>
 					</div>
 
-
-
 				</section>
 				<section>
 					<div class="cursive color-block">CSS Grid Layout is the most powerful layout system available in
@@ -86,7 +83,6 @@
 							<div class="layout-problems flex fragment fade-in flex-center color-block">Floats</div>
 							<div class="layout-problems flex fragment fade-in flex-center color-block">Positioning</div>
 						</div>
-
 						<div class="flex flex-space-around">
 							<div class="layout-problems flex fragment fade-in  flex-center color-block">Inline-block
 							</div>
@@ -98,9 +94,11 @@
 						</div>
 					</div>
 				</p>
-				<p class="fragment fade-in">Grid is the very first CSS module created specifically to solve the layout
-					problems we’ve all been hacking our way around for as long as we’ve been making websites.
-				</p>
+				<br>
+				<div class="fragment fade-in cursive color-block">Grid is the very first CSS module created specifically
+					to solve the layout problems we’ve all been hacking our way around for as long as we’ve been making
+					websites.
+				</div>
 			</section>
 
 			<section>
@@ -110,7 +108,9 @@
 
 				</section>
 				<section>
-					<h2>Grid Container</h2>
+					<h2 class="h2-custom">Grid Container</h2>
+					<hr size='5' class="custom-hr">
+					<br>
 					<pre><code><div class="container">
 						   <div class="item item-1"> </div>
 						   <div class="item item-2"> </div>
@@ -120,7 +120,9 @@
 
 				</section>
 				<section>
-					<h2>Grid Item</h2>
+					<h2 class="h2-custom">Grid Item</h2>
+					<hr size='5' class="custom-hr">
+					<br>
 					<pre><code><div class="container">
 						<div class="item"> </div>
 						<div class="item">
@@ -131,19 +133,23 @@
 					</code></pre>
 				</section>
 				<section>
-					<h2>Grid Line</h2>
+					<h2 class="h2-custom">Grid Line</h2>
+					<hr size='5' class="custom-hr">
 					<img src="custom/img/line.svg" class="img-vocabulary" alt="line">
 				</section>
 				<section>
-					<h2>Grid Cell</h2>
+					<h2 class="h2-custom">Grid Cell</h2>
+					<hr size='5' class="custom-hr">
 					<img src="custom/img/cell.svg" class="img-vocabulary" alt="cell">
 				</section>
 				<section>
-					<h2>Grid Track</h2>
+					<h2 class="h2-custom">Grid Track</h2>
+					<hr size='5' class="custom-hr">
 					<img src="custom/img/track.svg" class="img-vocabulary" alt="track">
 				</section>
 				<section>
-					<h2>Grid Area</h2>
+					<h2 class="h2-custom">Grid Area</h2>
+					<hr size='5' class="custom-hr">
 					<img src="custom/img/area.svg" class="img-vocabulary" alt="area">
 				</section>
 			</section>
@@ -152,7 +158,7 @@
 				<section>
 					<h2>Grid Container</h2>
 					<br>
-					<div class="flex flex-space-around w-120">
+					<div class="flex flex-space-around">
 						<div>
 							display: grid
 							<img src="custom/img/grid.png" class="img-vocabulary" alt="track">
@@ -168,7 +174,7 @@
 				<section>
 					<h2>Explicit Grid</h2>
 					<br>
-					<div class="flex flex-space-around w-120">
+					<div class="flex flex-space-around">
 						<div>
 							grid-template-rows: 50px 100px
 							<img src="custom/img/grid-ex1.png" class="img-vocabulary" alt="Explicit Grid 1">
@@ -204,17 +210,18 @@
 			<section>
 				<section>
 					<h2>Grid Gaps (Gutters)</h2>
-					<h4>The grid-column-gap and grid-row-gap properties create gutters between columns and rows.</h4>
+					<div class="cursive color-block">The grid-column-gap and grid-row-gap properties create gutters
+						between columns and rows.</div>
 					<br>
-					<div class="flex flex-space-around w-120">
-						<div>
+					<div class="flex flex-space-around">
+						<div class="flex-space-around__children">
 							grid-row-gap: 20px;<br>
 							grid-column-gap: 5rem;
-							<img src="custom/img/gap1.png" alt="Gap">
+							<img src="custom/img/gap1.png" class="img-vocabulary" alt="Gap">
 						</div>
-						<div>
+						<div class="flex-space-around__children">
 							grid-gap: 100px 1em<br><br>
-							<img src="custom/img/gap2.png" alt="Gap">
+							<img src="custom/img/gap2.png" class="img-vocabulary" alt="Gap">
 						</div>
 					</div>
 				</section>
@@ -225,14 +232,14 @@
 					<br>
 					<h3>justify-items and align-items</h3>
 					<div class="flex flex-direction-column">
-						<div class="flex w-110 flex-space-around">
+						<div class="flex flex-space-around">
 							<div class="layout-problems flex flex-center color-block">auto</div>
 							<div class="layout-problems flex flex-center color-block">start</div>
 							<div class="layout-problems flex flex-center color-block">end</div>
 							<div class="layout-problems flex flex-center color-block">center</div>
 						</div>
 						<br>
-						<div class="flex w-110 flex-space-around">
+						<div class="flex flex-space-around">
 							<div class="layout-problems flex flex-center color-block">stretch</div>
 							<div class="layout-problems flex flex-center color-block">baseline</div>
 							<div class="layout-problems flex flex-center color-block">first baseline</div>
@@ -241,6 +248,7 @@
 					</div>
 				</section>
 				<section>
+					<h2>AAligning Grid Tracks</h2>
 					<div class="img-single-container">
 						<img src="custom/img/align.png" alt="align">
 					</div>
@@ -266,11 +274,11 @@
 			</section>
 			<section>
 				<h2>Browser support</h2>
+				<div class="cursive color-block">Source: https://caniuse.com/</div>
 				<div>
 					<img src="custom/img/browser.png">
 				</div>
-				<p class="fragment fade-in">The time to build with grid is now!
-				</p>
+				<div class="fragment fade-in cursive color-block">The time to build with grid is now!</div>
 			</section>
 
 		</div>
@@ -282,9 +290,6 @@
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
 
