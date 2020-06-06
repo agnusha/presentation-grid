@@ -41,8 +41,6 @@ li {
     background-position: center;
 }
 
-
-
 li:before {
     content: '';
     display: inline-block;
