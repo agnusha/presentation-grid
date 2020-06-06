@@ -6,7 +6,8 @@ li {
     list-style: none;
 }
 
-.h2-custom:before {
+.h2-custom:before,
+.h2-custom:after {
     content: '';
     display: inline-block;
     height: 70px;
@@ -19,17 +20,28 @@ li {
 }
 
 .h2-custom:after {
+    background-position: center;
+}
+
+.h2-properties:before,
+.h2-properties:after {
     content: '';
     display: inline-block;
     height: 70px;
     width: 100px;
-    background-image: url(/custom/img/lis.png);
+    background-image: url(/custom/img/www.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     top: 5px;
     background-position: center;
 }
+
+.h2-properties:after {
+    background-position: center;
+}
+
+
 
 li:before {
     content: '';
